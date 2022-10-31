@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #5e06eb;
+  color: #fff;
+}
+
+/* 
+What happens when we set the display property to flex?
+The flex container becomes flexible 
+*/
+nav {
+  display: flex;
+  background-color: #f6ba15;
+}
+
+nav a {
+  color: #032442;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 200%;
+}
+
+/* 
+What happens when we set the display property to flex?
+The flex container becomes flexible 
+*/
+nav {
+    display: flex;
+    background-color: #d8a47f;
+}
+
+nav a {
+    color: #050b33;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px
+   
+}
+
+nav a:hover {
+    color: rgb(245, 8, 16);
+    font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  min-width: 100px;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+
+section{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.Previous Work{
+  height: 400px;
+}
+
+.photograph{
+  height: 700px;
+  padding-top: 2px;
+  text-align: center;
+  flex-wrap: wrap;
+ 
+}
+
+.contact {
+  height: 700px;
+  padding: 50px;
+  flex: 100%;   
+  line-height: 40px;
+  height: 500px;
+
+}
+
+form {
+  max-width: 500px;
+  max-height: 500px;  
+}
+
+
+label {
+  display: contents;
+}
+
+button {
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #13293d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.wrap {
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 15px;
+    flex: 100%
+  }
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.photograph{
+  border-width: 10px;
+  border-radius: 20px;
+  padding: 15px;
+  flex: 100%
+}
+
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.contact{
+  border-width: 10px;
+  border-radius: 20px;
+  padding: 15px;
+  flex: 100%
+}
+
+
+.flow-center {
+  height: 400px;
+  width: 400%;
+  border: 20px;
+  margin-left: 20px;
+
+
+}
+
+
+
+
+/* The default appearance is removed and replaced with a custom image */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-input, select {
+  padding: 1%;
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+}
+
+.text-input:hover, .checkbox:hover, 
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+
+
+/* The right-side border changes when the element is clicked on or tabbed into */
+.text-input:focus {
+  border-right-width: 5px;
+}
+
+/* The border becomes dashed when the element's placeholder text is visible */
+.text-input:placeholder-shown {
+  border-style: solid;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row select {
+  flex: 1 0 0;
+  margin-left: 2%;
+}
+
+.flex-row input {
+  margin-right: 2%;
+}
+
+/* The font style of the adjacent element changes when the given element is checked */
+.checkbox:checked + label {
+  color: #999999;
+  font-style: italic;
+}
+
+/* When checked, the adjacent element has text insert at the end */
+.checkbox:checked + label::after {
+  margin-left: 10px;
+  font-size: 90%;
+  content: "(thanks!)";
+}
+
+
+
+footer {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  background: #13293d;
+  color: #fff;
+  }
+/* 
+What does the flex-direction property define?
+It defines in which direction the container wants to stack the flex items
+What is it doing here? 
+We are telling the main body and navbar to stack vertically in a column
+*/
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+
+
+  
+
+
+  
+  
